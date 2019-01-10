@@ -3,17 +3,17 @@
 namespace rikudou\VariableType\Tests;
 
 use PHPUnit\Framework\TestCase;
-use rikudou\VariableType\InvalidArgumentException;
+use rikudou\VariableType\InvalidTypeException;
 use rikudou\VariableType\Types;
 
-class InvalidArgumentExceptionTest extends TestCase
+class InvalidTypeExceptionTest extends TestCase
 {
 
     public function testMessage()
     {
         try {
-            throw new InvalidArgumentException(Types::INT, "string");
-        } catch (InvalidArgumentException $exception) {
+            throw new InvalidTypeException(Types::INT, "string");
+        } catch (InvalidTypeException $exception) {
             $this->assertEquals($this->getMessage(Types::STRING, Types::INT), $exception->getMessage());
         }
     }

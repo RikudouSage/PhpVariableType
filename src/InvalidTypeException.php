@@ -4,7 +4,7 @@ namespace rikudou\VariableType;
 
 use Throwable;
 
-class InvalidArgumentException extends \InvalidArgumentException
+class InvalidTypeException extends \InvalidArgumentException
 {
 
     public function __construct(string $expectedType, $variable, int $code = 0, Throwable $previous = null)
