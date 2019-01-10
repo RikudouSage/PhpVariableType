@@ -1,3 +1,6 @@
+[![Build Status](https://img.shields.io/travis/com/RikudouSage/PhpVariableType/master.svg)](https://travis-ci.com/RikudouSage/PhpVariableType)
+[![Coverage Status](https://img.shields.io/coveralls/github/RikudouSage/PhpVariableType/master.svg)](https://coveralls.io/github/RikudouSage/PhpVariableType?branch=master)
+
 ## Installation
 
 `composer require rikudou/variable-type`
